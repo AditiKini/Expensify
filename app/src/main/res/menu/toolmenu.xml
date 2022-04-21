@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Profile"
+        android:title="Profile"/>
+
+    <item android:id="@+id/About"
+        android:title="About"/>
+
+    <item android:id="@+id/Expense_Graph"
+        android:title="Expense Graph"/>
+
+    <item android:id="@+id/Income_Graph"
+        android:title="Income Graph"/>
+
+    <item android:id="@+id/Share"
+        android:title="Share"/>
+
+    <item android:id="@+id/Tips"
+        android:title="Tips"></item>
+</menu>

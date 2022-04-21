@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context="com.example.expensetrackmanager.ExpenseFragment">
+
+    <include
+        android:id="@+id/total_expense_view"
+        layout="@layout/total_expense_view"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="@dimen/dimen_8"
+        android:layout_marginEnd="@dimen/dimen_8"
+        android:layout_marginTop="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_recent_transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:text="@string/text_recent_transactions"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_expense_view"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_id_expense"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo3"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Information"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toStartOf="@+id/edt_btn"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/edt_btn"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:drawableEnd="@drawable/edit"
+                android:drawableTint="@color/blue_500" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="@dimen/dimen_250"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_login_button"
+            android:text="Logout"
+            android:onClick="logout"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

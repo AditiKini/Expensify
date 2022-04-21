@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo3"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="28sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="v1.0 (1)"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="An easy and efficient budget app &amp; expense tracker for managing your money."
+            android:justificationMode="inter_word"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginRight="@dimen/dimen_12"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our mission is to empower people to be in control of their lives by bringing awareness of their finances."
+            android:justificationMode="inter_word"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginLeft="@dimen/dimen_12"
+            android:layout_marginRight="@dimen/dimen_12"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

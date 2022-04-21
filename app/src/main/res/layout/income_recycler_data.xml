@@ -1,0 +1,85 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transactionCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dimen_8"
+    android:layout_marginTop="@dimen/dimen_8"
+    android:layout_marginEnd="@dimen/dimen_8"
+    app:cardBackgroundColor="@color/surface"
+    app:cardElevation="@dimen/dimen_0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp">
+
+        <ImageView
+            android:id="@+id/IncomeIconView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            android:background="@drawable/icon_bg"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/dimen_24"
+            android:src="@drawable/ic_income"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/type_txt_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintStart_toEndOf="@id/IncomeIconView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Type"
+            android:layout_marginLeft="@dimen/dimen_16" />
+
+        <TextView
+            android:id="@+id/date_txt_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            app:layout_constraintStart_toEndOf="@id/IncomeIconView"
+            app:layout_constraintTop_toBottomOf="@id/type_txt_income"
+            tools:text="Date"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/dimen_16" />
+
+        <TextView
+            android:id="@+id/note_txt_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="80dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            app:layout_constraintStart_toEndOf="@id/IncomeIconView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Note"
+            android:layout_marginLeft="@dimen/dimen_16" />
+
+        <TextView
+            android:id="@+id/amount_txt_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_24"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="₹ 0.00"
+            android:layout_marginRight="@dimen/dimen_24" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
